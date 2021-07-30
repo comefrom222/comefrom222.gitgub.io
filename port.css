@@ -1,0 +1,110 @@
+body {
+ font-family: "EB Garamond", serif, "Fuggles", "cursive", "Noto Sans TC",
+  sans-serif;
+ background: #f0eeee;
+}
+
+/****** Slider ******/
+
+#veromcaSlider {
+ object-fit: cover;
+ /* filter: grayscale(60%); */
+}
+
+#veromcaSlider .carousel-caption,
+#veromcaFooter h1 {
+ font-family: "Satisfy", "cursive";
+ text-shadow: 1px 1px 15px rgb(58 54 54 / 31%);
+}
+
+/****** Footer ******/
+#veromcaFooter p {
+ font-family: "Neucha", "cursive";
+}
+
+#veromcaFooter {
+ background: url(./img/footerBg.png), #b4958d;
+ background-repeat: no-repeat, no-repeat;
+ background-position: right;
+ background-size: cover;
+ text-shadow: 1px 1px 10px rgb(15 14 14 / 37%);
+ /* filter: grayscale(10%); */
+}
+
+/****** AboutMe ******/
+#veromcaAboutMe {
+ background: #cab5b0;
+ /* filter: grayscale(10%); */
+ font-family: "Cormorant", "serif";
+}
+
+#veromcaPortfolioImg {
+ opacity: 0.5;
+}
+
+#veromcaAboutMe a {
+ text-decoration: none !important;
+}
+
+/****** Experience ******/
+#veromcaExperience {
+ background: #d1c2be;
+}
+
+#verticleLine {
+ border-right: 1px solid #38546d;
+ height: 200px;
+}
+
+#experiencePoint {
+ width: 10px;
+ height: 10px;
+ background-color: #000;
+ border-radius: 50%;
+ margin: 5px;
+ padding: 0;
+ z-index: 999;
+}
+/* 1：0.25 * 1rem = 0.25px
+2：0.5 * 1rem = 8px
+3：1 * 1rem = 16px
+4：1.5 * 1rem = 24px
+5：3 * 1rem = 48px */
+
+/* font-family: 'EB Garamond', serif;
+font-family: 'Fuggles', cursive;
+font-family: 'Noto Sans TC', sans-serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Neucha', cursive; 
+font-family: 'Cormorant', serif;
+*/
+
+/****** Footer ******/
+@media (min-width: 992px) {
+ #veromcaFooter p:last-child {
+  text-align: center !important;
+ }
+}
+
+/****** AboutMe ******/
+@media (min-width: 992px) {
+ #veromcaMediaIcon :nth-last-of-type(1) {
+  text-align: center !important;
+ }
+}
+
+@media (min-width: 500px){
+  #verticleLine {
+    padding: 48px !important;
+    margin: 0;
+  }
+}
+
+@media (min-width: 500px){
+  #verticleLine2 {
+    padding: 48px !important;
+    margin: 0;
+  }
+}
+
+
