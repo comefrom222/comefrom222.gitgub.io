@@ -23,6 +23,10 @@
     family=EB+Garamond:ital@1&family=Fuggles&family=Noto+Sans+TC&family=Satisfy&family=Cormorant:wght@300&family=Neucha&display=swap"
     rel="stylesheet">
 
+  <!-- icon -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 
 
 
@@ -53,7 +57,7 @@ pt：padding-top
 pr：padding-right
 pb：padding-bottom
 pl：padding-left
-ps：padding-right 和 padding-left
+px：padding-right 和 padding-left
 py：padding-top 和 padding-bottom 
 X-小	沒有任何	<576 像素
 小的	sm	≥576px
@@ -66,38 +70,39 @@ X-小	沒有任何	<576 像素
 
 
 <body>
-    <!-- 導覽列 -->
-    <nav id="veromcaMenu" class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#veromcaNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="veromcaNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link " href="#veromcaAboutMe"> <i class="fas fa-fw fa-bed me-2"></i>About ME</a>
-            </li>
-  
-            <li class="nav-item">
-              <a class="nav-link" href="#veromcaExperience"><i class="fas fa-fw fa-dumbbell me-2"></i>Experience</a>
-            </li>
-  
-            <li class="nav-item">
-              <a class="nav-link" href="#veromcaSkill"><i class="fas fa-fw fa-utensils me-2"></i>Skills</a>
-            </li>
-  
-            <li class="nav-item">
-              <a class="nav-link" href="#veromcaProject"><i class="fas fa-fw fa-map me-2"></i>Project</a>
-            </li>
-  
-            <li class="nav-item">
-              <a class="nav-link" href="#veromcaContact"><i class="fas fa-fw fa-envelope me-2"></i>聯絡我</a>
-            </li>
-          </ul>
-        </div>
+  <!-- 導覽列 -->
+  <nav id="veromcaMenu" class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#veromcaNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="veromcaNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="#veromcaAboutMe"> <i class="fas fa-user-graduate me-2"></i></i>About ME</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#veromcaExperience"><i
+                class="fas fa-envelope-open-text me-2"></i></i>Experience</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#veromcaProject"><i class="far fa-image me-2"></i>Project</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#veromcaSkill"><i class="fas fa-laptop me-2"></i></i>Skills</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " target="_parent" href="./login.html"><i class="fas fa-comment-dots me-2"></i>聯絡我</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
   <!-- Slider -->
   <section id="veromcaSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -113,9 +118,9 @@ X-小	沒有任何	<576 像素
 
   <!-- AboutMe -->
   <section id="veromcaAboutMe" class="py-5">
-
     <div class="container text-light">
       <div class="row gy-4">
+        <header class="text-center h1 text-decoration-underline py-5 m-0">About Me</header>
         <!-- 個人資料區 -->
         <div class="col-12 col-lg-4 p-0 m-0">
           <div class="row gy-4 p-0 m-0">
@@ -166,23 +171,25 @@ X-小	沒有任何	<576 像素
     </div>
   </section>
 
-  
+
   <!-- Experience -->
   <section id="veromcaExperience" class="py-5">
     <div class="container-fluid">
+      <header class="text-center h1 text-decoration-underline py-5 m-0">Experience</header>
+
       <!-- 第一段 -->
       <div class="row">
         <div class="col-2 d-none d-lg-block px-2"></div> <!-- md消失 -->
         <div class="col-4 col-lg-3  p-2 m-0 text-end " id="verticleLine">
           <p class="fw-bold">109/6 - 110/02</p>
           <small>設計助理</small>
-        </ul>
-      </div>
+          </ul>
+        </div>
 
-      <!--小圓點-->
-      <!-- <div id="experiencePoint" class=""></div>  -->
-      
-      <div class="col-8 col-lg-6  p-2 m-0 " id="verticleLine2">
+        <!--小圓點-->
+        <!-- <div id="experiencePoint" class=""></div>  -->
+
+        <div class="col-8 col-lg-6  p-2 m-0 " id="verticleLine2">
           <strong>鼎侑工程顧問有限公司</strong>
           <p class="mt-3">協助系辦行政相關事宜，完成主管交代之任務、輔導同學完成課業上的問題</p>
           </ul>
@@ -239,17 +246,136 @@ X-小	沒有任何	<576 像素
     </div>
   </section>
 
+  <!-- Project -->
+  <section id="veromcaProject" class="">
+
+    <div class="container-fluid">
+
+      <!--這是一個大row-->
+      <div class="row">
+
+        <!--row裡面拿col-3-->
+        <div class="col-2" id="projectImg">
+          <!-- <img src="./img/footerBg.png"> -->
+        </div>
+
+
+        <!------- 第一組卡片 ------->
+        <!--row裡面拿col-9-->
+        <div class="col-10 d-flex flex-column" id="projectCard">
+          <header class="text-center h1 text-decoration-underline py-5 m-0">Project</header>
+
+          <div class="d-flex align-items-start flex-column">
+            <div class="card bg-transparent m-0 p-2" style="max-width: 540px;">
+              <div class="row g-0">
+                <!-- 圖片區 -->
+                <div class="col col-md-4">
+                  <img src="..." alt="...">
+                </div>
+                <!-- 文字區 -->
+                <div class="col col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted text-end">Go >>></small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------- 第二組卡片 ------->
+          <div class="d-flex align-items-end flex-column">
+            <div class="card bg-transparent m-0 p-2" style="max-width: 540px; ">
+              <div class="row g-0">
+                <!-- 圖片區 -->
+                <div class="col col-md-4">
+                  <img src="..." alt="...">
+                </div>
+                <!-- 文字區 -->
+                <div class="col col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted text-end">Go >>></small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------- 第三組卡片 ------->
+          <div class="d-flex align-items-start flex-column">
+            <div class="card bg-transparent m-0 p-2" style="max-width: 540px;">
+              <div class="row g-0">
+                <!-- 圖片區 -->
+                <div class="col col-md-4">
+                  <img src="..." alt="...">
+                </div>
+                <!-- 文字區 -->
+                <div class="col col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional
+                      content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted text-end">Go >>></small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+
   <!-- Skill -->
   <section id="veromcaSkill" class="py-5">
-    <div class="container">
+    <div class="container py-5">
+      <header class="text-center h1 text-decoration-underline py-5 m-0">Skills</header>
 
+      <div class="row ">
+        <div class="col-12 text-center p-4">
+          <h3 class="p-2 m-0">Soft</h3>
+          <img src="https://img.icons8.com/material-outlined/96/000000/html.png" />
+          <img src="https://img.icons8.com/material-outlined/96/000000/css.png" />
+          <img src="https://img.icons8.com/material-outlined/96/000000/php.png" />
+          <img src="https://img.icons8.com/windows/96/000000/bootstrap.png" />
+          <img src="https://img.icons8.com/windows/96/000000/github-squared.png" />
+        </div>
+        <div class="col-12 text-center p-4">
+          <h3 class="p-2 m-0">3D</h3>
+          <img src="https://img.icons8.com/ios/100/000000/3ds-max.png" />
+          <img src="https://img.icons8.com/ios-filled/100/000000/google-sketchup.png" />
+          <img src="https://img.icons8.com/ios/100/000000/autodesk-autocad.png" />
+          <img src="https://img.icons8.com/ios-glyphs/100/000000/rhinoceros.png" />
+          <img src="https://img.icons8.com/ios-filled/100/000000/3d-scale.png" />
+          <img src="https://img.icons8.com/material-outlined/96/000000/keyshot-logo.png" />
+          <img src="https://img.icons8.com/wired/64/000000/lumion.png" />
+        </div>
+        <div class="col-12 text-center p-4">
+          <h3 class="p-2 m-0">Illustration</h3>
+          <img src="https://img.icons8.com/windows/96/000000/adobe-photoshop.png" />
+          <img src="https://img.icons8.com/windows/96/000000/adobe-illustrator.png" />
+          <img src="https://img.icons8.com/windows/96/000000/adobe-after-effects.png" />
+          <img src="https://img.icons8.com/wired/64/000000/clip-studio-paint.png" />
+        </div>
+        <div class="col-12 text-center p-4">
+          <h3 class="p-2 m-0">Instrument</h3>
+          <img src="https://img.icons8.com/material-outlined/96/000000/ms-excel--v2.png" />
+          <img src="https://img.icons8.com/fluency-systems-regular/96/000000/word.png" />
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Project -->
-  <section id="veromcaProject">
-
-  </section>
 
   <!-- Contact -->
   <section id="veromcaContact">

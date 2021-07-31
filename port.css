@@ -56,7 +56,7 @@ body {
 #veromcaExperience {
  background: #d1c2be;
  color: #595757;
- font-family:"serif";
+ font-family: "serif";
 }
 
 #verticleLine {
@@ -75,8 +75,33 @@ body {
  display: flex;
  left: -5%;
  /* z-index: 999; */
-
 }
+
+/**************** Login ****************/
+#veromcaLogIn {
+ font-family: serif;
+}
+
+#veromcaLogIn input {
+ /* border-bottom: 1px solid #595757; */
+ /* width: 100px; */
+ border: none;
+ outline: none;
+ /* background: none; */
+}
+/**************** Project ****************/
+#veromcaProject {
+ background: #e1d4d0;
+ font-family: serif;
+}
+
+#projectImg {
+ background: url(./img/projectImg.png) no-repeat,
+  url(./img/projectImg2.png) no-repeat;
+ background-size: cover;
+ /* overflow: hidden; */
+}
+
 /* 1：0.25 * 1rem = 0.25px
 2：0.5 * 1rem = 8px
 3：1 * 1rem = 16px
@@ -112,9 +137,10 @@ font-family: 'Cormorant', serif;
  }
 }
 
-@media (min-width: 500px) {
- #verticleLine2 {
-  padding: 48px !important;
-  margin: 0;
+@media (min-width: 768px) {
+ #projectCard {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 48px;
  }
 }
