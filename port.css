@@ -62,19 +62,16 @@ body {
 #verticleLine {
  border-right: 1px solid #595757;
  height: 200px;
+ overflow: visible;
 }
 
 #experiencePoint {
- width: 10px;
- height: 10px;
- background-color: #000;
- border-radius: 50%;
- margin: 5px;
- padding: 0;
- top: 0;
- display: flex;
- left: -5%;
- /* z-index: 999; */
+ position: relative;
+ overflow: auto;
+ left: -56px;
+ top: 17px;
+  /* left: -8px; */
+
 }
 
 /**************** Login ****************/
@@ -83,11 +80,8 @@ body {
 }
 
 #veromcaLogIn input {
- /* border-bottom: 1px solid #595757; */
- /* width: 100px; */
  border: none;
  outline: none;
- /* background: none; */
 }
 /**************** Project ****************/
 #veromcaProject {
@@ -99,7 +93,6 @@ body {
  background: url(./img/projectImg.png) no-repeat,
   url(./img/projectImg2.png) no-repeat;
  background-size: cover;
- /* overflow: hidden; */
 }
 
 /* 1：0.25 * 1rem = 0.25px
@@ -125,18 +118,39 @@ font-family: 'Cormorant', serif;
 
 /**************** AboutMe ****************/
 @media (min-width: 992px) {
- #veromcaMediaIcon :nth-last-of-type(1) {
-  text-align: center !important;
- }
+  #veromcaMediaIcon :nth-last-of-type(1) {
+    text-align: center !important;
+  }
 }
 
-@media (min-width: 500px) {
+
+/**************** Experience ****************/
+/* 經歷的第一段文字 */
+@media (min-width: 992px) {
  #verticleLine {
   padding: 48px !important;
-  margin: 0;
+  margin: 0px !important;
  }
 }
 
+/* 經歷的第二段文字 */
+@media (min-width: 992px) {
+ #verticleLine2 {
+  padding: 48px !important;
+  margin: 0px !important;
+ }
+}
+
+@media(min-width:992px){
+  #verticleLine h6{
+    font-size: 24px;
+    /* margin-top: 8px;
+    margin-bottom: 8px; */
+  }
+}
+
+/**************** Project ****************/
+/* 作品區 */
 @media (min-width: 768px) {
  #projectCard {
   padding-left: 80px;
@@ -144,3 +158,11 @@ font-family: 'Cormorant', serif;
   padding-bottom: 48px;
  }
 }
+
+/* @media (min-width: 768px) {
+ #ProjectCardSecondSection {
+  display: flex !important;
+  align-items: end !important;
+  flex-flow: column !important;
+ }
+} */
