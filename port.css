@@ -4,7 +4,7 @@ body {
  background: #f0eeee;
 }
 
-/****** Slider ******/
+/**************** Slider ****************/
 
 #veromcaSlider {
  object-fit: cover;
@@ -17,7 +17,7 @@ body {
  text-shadow: 1px 1px 15px rgb(58 54 54 / 31%);
 }
 
-/****** Footer ******/
+/**************** Footer ****************/
 #veromcaFooter p {
  font-family: "Neucha", "cursive";
 }
@@ -31,7 +31,13 @@ body {
  /* filter: grayscale(10%); */
 }
 
-/****** AboutMe ******/
+#veromcaArrow {
+ right: 5vh;
+ bottom: 5vh;
+ z-index: 999;
+}
+
+/**************** AboutMe ****************/
 #veromcaAboutMe {
  background: #cab5b0;
  /* filter: grayscale(10%); */
@@ -46,13 +52,15 @@ body {
  text-decoration: none !important;
 }
 
-/****** Experience ******/
+/**************** Experience ****************/
 #veromcaExperience {
  background: #d1c2be;
+ color: #595757;
+ font-family:"serif";
 }
 
 #verticleLine {
- border-right: 1px solid #38546d;
+ border-right: 1px solid #595757;
  height: 200px;
 }
 
@@ -63,7 +71,11 @@ body {
  border-radius: 50%;
  margin: 5px;
  padding: 0;
- z-index: 999;
+ top: 0;
+ display: flex;
+ left: -5%;
+ /* z-index: 999; */
+
 }
 /* 1：0.25 * 1rem = 0.25px
 2：0.5 * 1rem = 8px
@@ -79,32 +91,30 @@ font-family: 'Neucha', cursive;
 font-family: 'Cormorant', serif;
 */
 
-/****** Footer ******/
+/**************** Footer ****************/
 @media (min-width: 992px) {
  #veromcaFooter p:last-child {
   text-align: center !important;
  }
 }
 
-/****** AboutMe ******/
+/**************** AboutMe ****************/
 @media (min-width: 992px) {
  #veromcaMediaIcon :nth-last-of-type(1) {
   text-align: center !important;
  }
 }
 
-@media (min-width: 500px){
-  #verticleLine {
-    padding: 48px !important;
-    margin: 0;
-  }
+@media (min-width: 500px) {
+ #verticleLine {
+  padding: 48px !important;
+  margin: 0;
+ }
 }
 
-@media (min-width: 500px){
-  #verticleLine2 {
-    padding: 48px !important;
-    margin: 0;
-  }
+@media (min-width: 500px) {
+ #verticleLine2 {
+  padding: 48px !important;
+  margin: 0;
+ }
 }
-
-
